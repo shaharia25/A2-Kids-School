@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #F7F7F7;
 }
 body{
     max-width: 1160px;
@@ -11,6 +10,13 @@ body{
 /* Shared Style Start */
 .quicksand-font{
     font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.raleway-font {
+    font-family: "Raleway", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -143,8 +149,8 @@ body{
     }
     .hero-img{
         width: 90%;
-        margin-left: 16px;
-        margin-right: 16px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     .enroll-btn{
         padding: 6px 24px;
@@ -154,4 +160,99 @@ body{
         display: flex;
         justify-content: center;
     }
+}
+/* banner section end */
+.standard-container{
+    background-image: url(../assets/bg.png);
+    /* background-size: cover; */
+}
+.standard-h{
+    padding-top: 60px;
+    padding-bottom: 80px;
+    text-align: center;
+    font-size:2.8rem;
+    font-weight: 700px;
+}
+.card-container{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    display: flex;
+    /* justify-content: center; */
+    text-align: center;
+    align-items: center;
+    width: 367px;
+    height: 476px;
+    padding: 0 40px;
+    box-shadow: 0 0 28.3px 0.9px rgba(0, 0, 0, 0.05);
+    border: none;
+    border-radius: 18.5px;
+}
+.card-1{
+    background-image: linear-gradient(to bottom,rgba(222, 245, 255, 1),rgba(255, 255, 255, 0));
+}
+.card-2{
+    background-image: linear-gradient(to bottom,rgba(255, 244, 220, 1),rgba(255, 255, 255, 0));
+}
+.card-3{
+    background-image: linear-gradient(to bottom,rgba(238, 225, 255, 1),rgba(255, 255, 255, 0));
+}
+.card-h{
+    font-weight: 700px;
+    font-size: 1.5rem;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.card-p{
+    font-size: 0.9rem;
+    font-weight: 500px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.card1-a{
+    text-decoration: none;
+    color: #64C8FF;
+}
+.card2-a{
+    text-decoration: none;
+    color: #F0AA00;
+}
+.card3-a{
+    text-decoration: none;
+    color: #8700FF;
+}
+.circle-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    gap:10px;
+}
+.circle{
+    width: 60px;
+    height: 60px;
+    background-color: #FEA301;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+@media screen and (max-width:390px) {
+    .card-container{
+    flex-direction: column;
+    gap: 12px;
+    }
+    .card{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .circle-container{
+        display: none;
+    }
+
+    
 }
