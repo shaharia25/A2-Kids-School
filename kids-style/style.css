@@ -81,7 +81,7 @@ body{
         display: none;
     }
     .fa-bars{
-        display:inline-block;
+        display: block;
         font-size: 30px;
     }
 }
